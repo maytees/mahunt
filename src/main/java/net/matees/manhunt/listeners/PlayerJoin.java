@@ -2,6 +2,8 @@ package net.matees.manhunt.listeners;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.NamedTextColor;
+import net.matees.manhunt.Game;
+import net.matees.manhunt.Manhunt;
 import net.matees.manhunt.items.TrackerCompass;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;

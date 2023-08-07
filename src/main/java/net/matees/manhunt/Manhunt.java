@@ -2,6 +2,7 @@ package net.matees.manhunt;
 
 import me.kodysimpson.simpapi.command.CommandManager;
 import net.matees.manhunt.commands.SetRunnerCommand;
+import net.matees.manhunt.listeners.DeathListener;
 import net.matees.manhunt.listeners.FireCompass;
 import net.matees.manhunt.listeners.PickBlock;
 import net.matees.manhunt.listeners.PlayerJoin;
@@ -20,6 +21,7 @@ public final class Manhunt extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new PlayerJoin(), this);
         getServer().getPluginManager().registerEvents(new FireCompass(), this);
         getServer().getPluginManager().registerEvents(new PickBlock(), this);
+        getServer().getPluginManager().registerEvents(new DeathListener(), this);
 
         try {
             CommandManager.createCoreCommand(this, "manhunt", "Manhunt plugin", "/manhunt", null, SetRunnerCommand.class);
